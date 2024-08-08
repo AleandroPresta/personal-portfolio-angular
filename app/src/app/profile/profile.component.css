@@ -1,0 +1,10 @@
+.profile-container {
+  height: 80vh;
+}
+
+/* ICONS */
+
+.icon {
+  cursor: pointer;
+  height: 2rem;
+}
