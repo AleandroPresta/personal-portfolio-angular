@@ -4,11 +4,12 @@ import { NavigationComponent } from "./navigation/navigation.component";
 import { ProfileComponent } from "./profile/profile.component";
 import { AboutComponent } from "./about/about.component";
 import { SkillsComponent } from "./skills/skills.component";
+import { ContactComponent } from './contact/contact.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavigationComponent, ProfileComponent, AboutComponent, SkillsComponent],
+  imports: [RouterOutlet, NavigationComponent, ProfileComponent, AboutComponent, SkillsComponent, ContactComponent],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
