@@ -12,7 +12,19 @@ import { Skill } from '../Skill';
 })
 export class SkillsContainerComponent {
 
-  skills: Skill[] = [
+  // Programming Languages
+  skillset1: Skill[] = [
+    new Skill('JavaScript', 'Intermediate'),
+    new Skill('TypeScript', 'Intermediate'),
+    new Skill('Python', 'Intermediate'),
+    new Skill('Java', 'Intermediate'),
+    new Skill('C#', 'Intermediate'),
+    new Skill('C++', 'Intermediate'),
+    new Skill('C', 'Intermediate'),
+  ];
+
+  // Web Frameworks
+  skillset2: Skill[] = [
     new Skill('Angular', 'Intermediate'),
     new Skill('React', 'Intermediate'),
     new Skill('Vue', 'Intermediate'),

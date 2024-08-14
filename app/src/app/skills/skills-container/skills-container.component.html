@@ -3,7 +3,7 @@
         <div class="col border">
             <h2 class="text-center my-5">SkillSet 1</h2>
             <div class="d-flex flex-wrap justify-content-center gap-5">
-                <div *ngFor="let skill of skills">
+                <div *ngFor="let skill of skillset1">
                     <app-skill-content [skill]="skill.name" [experience]="skill.experience"></app-skill-content>
                 </div>
             </div>
@@ -11,16 +11,9 @@
         <div class="col border">
             <h2 class="text-center my-5">SkillSet 2</h2>
             <div class="d-flex flex-wrap justify-content-center gap-5">
-                <app-skill-content></app-skill-content>
-                <app-skill-content></app-skill-content>
-                <app-skill-content></app-skill-content>
-                <app-skill-content></app-skill-content>
-                <app-skill-content></app-skill-content>
-                <app-skill-content></app-skill-content>
-                <app-skill-content></app-skill-content>
-                <app-skill-content></app-skill-content>
-                <app-skill-content></app-skill-content>
-                <app-skill-content></app-skill-content>
+                <div *ngFor="let skill of skillset2">
+                    <app-skill-content [skill]="skill.name" [experience]="skill.experience"></app-skill-content>
+                </div>
             </div>
         </div>
     </div>
