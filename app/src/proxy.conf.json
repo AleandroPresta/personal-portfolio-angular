@@ -1,0 +1,8 @@
+{
+  "/api": {
+    "target": "https://raw.githubusercontent.com/AleandroPresta/static-api/master/",
+    "secure": false,
+    "changeOrigin": true,
+    "logLevel": "debug"
+  }
+}
