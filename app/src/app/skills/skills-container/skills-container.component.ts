@@ -29,12 +29,10 @@ export class SkillsContainerComponent implements OnInit {
 
   ngOnInit() {
     this.skillService.getSkillSet1().subscribe((data: Skill[]) => {
-      console.log(data);
       this.skillset1 = data;
     });
 
     this.skillService.getSkillSet2().subscribe((data: Skill[]) => {
-      console.log(data);
       this.skillset2 = data;
     });
   }
