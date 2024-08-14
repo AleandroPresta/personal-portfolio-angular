@@ -1,20 +1,22 @@
 import { Component } from '@angular/core';
 import { SkillContentComponent } from "./skill-content/skill-content.component";
+import { NgFor } from '@angular/common';
+import { Skill } from '../Skill';
 
 @Component({
   selector: 'app-skills-container',
   standalone: true,
-  imports: [SkillContentComponent],
+  imports: [SkillContentComponent, NgFor],
   templateUrl: './skills-container.component.html',
   styleUrl: './skills-container.component.css'
 })
 export class SkillsContainerComponent {
 
-  skills: Map<string, string> = new Map<string, string>([
-    ['skill1', 'value1'],
-    ['skill2', 'value2'],
-    ['skill3', 'value3'],
-    ['skill4', 'value4'],
-  ])
+  skills: Skill[] = [
+    new Skill('Angular', 'Intermediate'),
+    new Skill('React', 'Intermediate'),
+    new Skill('Vue', 'Intermediate'),
+    new Skill('Node.js', 'Intermediate'),
+  ];
 
 }
