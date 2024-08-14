@@ -1,7 +1,7 @@
 <div class="container my-5">
     <div class="row">
         <div class="col border border-black rounded-4 mx-4">
-            <h2 class="text-center my-5">Programming Languages</h2>
+            <h2 class="text-center my-5 text-secondary">Programming Languages</h2>
             <div class="d-flex flex-wrap justify-content-center gap-5">
                 <div *ngFor="let skill of skillset1">
                     <app-skill-content [skill]="skill.name" [experience]="skill.experience"></app-skill-content>
@@ -9,7 +9,7 @@
             </div>
         </div>
         <div class="col border border-black rounded-4 mx-4">
-            <h2 class="text-center my-5">Frameworks</h2>
+            <h2 class="text-center my-5 text-secondary">Frameworks</h2>
             <div class="d-flex flex-wrap justify-content-center gap-5">
                 <div *ngFor="let skill of skillset2">
                     <app-skill-content [skill]="skill.name" [experience]="skill.experience"></app-skill-content>
