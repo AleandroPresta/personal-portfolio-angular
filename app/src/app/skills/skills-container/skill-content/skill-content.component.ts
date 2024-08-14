@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-skill-content',
@@ -8,5 +8,8 @@ import { Component } from '@angular/core';
   styleUrl: './skill-content.component.css'
 })
 export class SkillContentComponent {
+
+  skill: string = 'Angular';
+  experience: string = 'Basic';
 
 }
