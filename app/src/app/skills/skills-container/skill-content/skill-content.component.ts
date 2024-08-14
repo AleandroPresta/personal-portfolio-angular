@@ -9,7 +9,7 @@ import { Component, Input } from '@angular/core';
 })
 export class SkillContentComponent {
 
-  skill: string = 'Angular';
-  experience: string = 'Basic';
+  @Input() skill: string = 'Angular';
+  @Input() experience: string = 'Basic';
 
 }

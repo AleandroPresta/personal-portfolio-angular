@@ -4,9 +4,7 @@
             <h2 class="text-center my-5">SkillSet 1</h2>
             <div class="d-flex flex-wrap justify-content-center gap-5">
                 <div *ngFor="let skill of skills">
-                    <p>{{skill.name}}</p>
-                    <p>{{skill.experience}}</p>
-                    <app-skill-content></app-skill-content>
+                    <app-skill-content [skill]="skill.name" [experience]="skill.experience"></app-skill-content>
                 </div>
             </div>
         </div>
