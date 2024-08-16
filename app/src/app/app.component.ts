@@ -6,11 +6,12 @@ import { AboutComponent } from "./about/about.component";
 import { SkillsComponent } from "./skills/skills.component";
 import { ContactComponent } from './contact/contact.component';
 import { FooterComponent } from './footer/footer.component';
+import { ProjectsComponent } from './projects/projects.component';
 
 @Component({
   selector: 'app-root',
   standalone: true,
-  imports: [RouterOutlet, NavigationComponent, ProfileComponent, AboutComponent, SkillsComponent, ContactComponent, FooterComponent],
+  imports: [RouterOutlet, NavigationComponent, ProfileComponent, AboutComponent, SkillsComponent, ProjectsComponent, ContactComponent, FooterComponent,],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
 })
