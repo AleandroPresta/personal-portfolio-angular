@@ -1,3 +1,36 @@
 img {
   object-fit: cover;
 }
+
+/* Default state (non-hover) */
+.card {
+  transition: transform 0.4s ease-in-out, box-shadow 0.4s ease-in-out;
+}
+
+/* Hover effect on the entire card */
+.card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+/* Default state for the image */
+.card-img-top {
+  transition: transform 0.5s ease-in-out;
+}
+
+/* Hover effect on the title */
+.card:hover .card-title {
+  font-weight: bold;
+  color: #000; /* Change color if desired */
+}
+
+/* Hover effect on the text */
+.card:hover .card-text {
+  color: #333; /* Darker text color */
+}
+
+/* Hover effect on the button */
+.card:hover .btn {
+  background-color: #444; /* Slightly darker button */
+  border-color: #444;
+}

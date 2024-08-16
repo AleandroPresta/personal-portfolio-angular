@@ -11,7 +11,7 @@ export class ProjectContentComponent {
 
   @Input() projectTitle: string = 'Project 1';
   @Input() projectDescription: string = 'Description 1';
-  @Input() projectImageUrl: string = 'https://placehold.co/400x600/orange/white';
+  @Input() projectImageUrl: string = 'https://placehold.co/300x300/orange/white';
   @Input() projectUrl: string = 'https://www.google.com';
 
 }
