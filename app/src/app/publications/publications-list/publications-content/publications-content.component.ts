@@ -1,10 +1,11 @@
 import { Component, Input } from '@angular/core';
 import { Author } from '../../Publication';
+import { CustomBadgeComponent } from '../../../custom-badge/custom-badge.component';
 
 @Component({
   selector: 'app-publications-content',
   standalone: true,
-  imports: [],
+  imports: [CustomBadgeComponent],
   templateUrl: './publications-content.component.html',
   styleUrl: './publications-content.component.css'
 })
