@@ -1,9 +1,10 @@
 import { Component, Input } from '@angular/core';
+import { CustomBadgeComponent } from '../../../custom-badge/custom-badge.component';
 
 @Component({
   selector: 'app-project-content',
   standalone: true,
-  imports: [],
+  imports: [CustomBadgeComponent],
   templateUrl: './project-content.component.html',
   styleUrl: './project-content.component.css'
 })

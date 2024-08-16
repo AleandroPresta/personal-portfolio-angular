@@ -1,0 +1,14 @@
+.tag {
+  background-color: #000000; /* Background color of the tags */
+  color: #fff; /* Text color */
+  padding: 5px 10px; /* Padding inside the tags */
+  border-radius: 20px; /* Rounded corners */
+  font-size: 14px; /* Font size */
+  text-decoration: none;
+  white-space: nowrap; /* Prevent text from wrapping */
+}
+
+.tag:hover {
+  background-color: #424242; /* Darker background on hover */
+  cursor: pointer; /* Change cursor on hover */
+}
