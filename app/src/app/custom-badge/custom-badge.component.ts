@@ -1,4 +1,4 @@
-import { Component } from '@angular/core';
+import { Component, Input } from '@angular/core';
 
 @Component({
   selector: 'app-custom-badge',
@@ -8,5 +8,7 @@ import { Component } from '@angular/core';
   styleUrl: './custom-badge.component.css'
 })
 export class CustomBadgeComponent {
+
+  @Input() badgeText: string = 'Badge Text';
 
 }

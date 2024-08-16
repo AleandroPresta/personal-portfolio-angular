@@ -1,7 +1,9 @@
 <div class="container d-flex gap-2">
     <div class="card" style="width: 16rem;">
     <img src={{projectImageUrl}} class="card-img-top" alt="Project image" width="300px" height="300px">
-    <app-custom-badge></app-custom-badge>
+    <div class="m-2">
+        <app-custom-badge [badgeText]="'Django'"></app-custom-badge>
+    </div>   
     <div class="card-body">
         <h5 class="card-title fw-bold">{{projectTitle}}</h5>
         <p class="card-text">{{projectDescription}}</p>
