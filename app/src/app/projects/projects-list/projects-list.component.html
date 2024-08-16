@@ -1,0 +1,17 @@
+<div class="container my-5">
+    <div class="row">
+        <div class="col m-4">
+            <div class="d-flex flex-wrap justify-content-center gap-5">
+                <div *ngFor="let project of projects">
+                    <app-project-content
+                    [projectTitle]="project.projectTitle"
+                    [projectDescription]="project.projectDescription"
+                    [projectImageUrl]="project.projectImageUrl"
+                    [projectUrl]="project.projectUrl">
+                        
+                    </app-project-content>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
