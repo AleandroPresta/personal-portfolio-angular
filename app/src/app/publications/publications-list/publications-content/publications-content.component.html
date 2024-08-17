@@ -1,0 +1,18 @@
+<div class="publications-component row p-4 rounded-3 border border-black">
+  <div class="col">
+    <h5>{{publicationTitle}}</h5>
+    <div class="d-flex flex-row flex-wrap gap-1">
+      <app-custom-badge *ngFor="let tag of publicationTags" [badgeText]=tag></app-custom-badge>
+    </div>
+    <p>{{publicationDate}}</p>
+    <div class="d-flex gap-2 flex-column flex-md-row">
+      <div class="d-flex gap-2" *ngFor="let author of publicationAuthors"> <!-- ngFor -->
+        <img class="rounded-circle" src={{author.authorProfilePicture}} alt="Author profile picture" height="25px" width="25px">
+        <p class="">{{author.authorName}}</p>
+      </div>
+    </div>
+  </div>
+  <div class="col d-flex justify-content-center justify-content-xl-end">
+    <img class="" src={{publicationPreviewImage}} alt="Paper preview image" width="500px" height="300px">
+  </div> 
+</div>
