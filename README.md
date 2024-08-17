@@ -1,3 +1,3 @@
-# personal-portfolio-angular
+# Personal Portfolio
 
-Personal portfolio built in Angular
+A personal portfolio project, build in Angular and Bootstrap, showcases my education, skills, projects and publications.
