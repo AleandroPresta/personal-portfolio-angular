@@ -4,6 +4,7 @@ import { PublicationsComponent } from "../publications.component";
 import { Publication } from '../Publication';
 import { NgFor } from '@angular/common';
 import { PublicationsService } from './publications.service';
+import { Author } from '../Publication';
 
 @Component({
   selector: 'app-publications-list',
@@ -14,14 +15,16 @@ import { PublicationsService } from './publications.service';
 })
 export class PublicationsListComponent implements OnInit {
 
-  publications: Publication[] = [];
+  publications: Publication[] = [
+
+  ];
 
   constructor(private publicationsService: PublicationsService) { }
 
   ngOnInit(): void {
-    this.publicationsService.getPublications().subscribe(
-      (data: Publication[]) => this.publications = data
-    );
+    this.publicationsService.getPublications().subscribe(data => {
+      console.log(JSON.stringify(data, null, 2));  // Log the data
+      this.publications = data;
+    });
   }
-
 }

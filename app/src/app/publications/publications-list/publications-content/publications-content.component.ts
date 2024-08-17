@@ -17,9 +17,9 @@ export class PublicationsContentComponent {
   @Input() publicationPreviewImage: string = 'https://placehold.co/150x150';
   @Input() publicationDate: string = 'Aug 2024';
   @Input() publicationAuthors: Author[] = [
-    new Author('Author 1', 'https://placehold.co/25x25'),
-    new Author('Author 2', 'https://placehold.co/25x25'),
-    new Author('Author 3', 'https://placehold.co/25x25')
+    { authorName: 'Author 1', authorProfilePicture: 'https://placehold.co/25x25' },
+    { authorName: 'Author 2', authorProfilePicture: 'https://placehold.co/25x25' },
+    { authorName: 'Author 3', authorProfilePicture: 'https://placehold.co/25x25' }
   ];
 
   constructor() { }
