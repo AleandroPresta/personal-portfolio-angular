@@ -1,3 +1,9 @@
-<div class="container my-5">
-    <app-publications-content></app-publications-content>
+<div class="container my-5 d-flex flex-column gap-3">
+    <app-publications-content 
+    *ngFor="let publication of publications"
+    [publicationTitle]="publication.publicationTitle"
+    [publicationTags]="publication.publicationTags"
+    [publicationPreviewImage]="publication.publicationPreviewImage"
+    [publicationDate]="publication.publicationDate"
+    [publicationAuthors]="publication.publicationAuthors"></app-publications-content>
 </div>
