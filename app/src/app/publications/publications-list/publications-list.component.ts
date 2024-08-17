@@ -1,8 +1,9 @@
-import { Component, Input } from '@angular/core';
+import { Component, Input, OnInit } from '@angular/core';
 import { PublicationsContentComponent } from './publications-content/publications-content.component';
 import { PublicationsComponent } from "../publications.component";
 import { Publication } from '../Publication';
 import { NgFor } from '@angular/common';
+import { PublicationsService } from './publications.service';
 
 @Component({
   selector: 'app-publications-list',
@@ -11,39 +12,16 @@ import { NgFor } from '@angular/common';
   templateUrl: './publications-list.component.html',
   styleUrl: './publications-list.component.css'
 })
-export class PublicationsListComponent {
+export class PublicationsListComponent implements OnInit {
 
-  @Input() publications: Publication[] = [
-    new Publication(
-      'The future of AI in the automotive industry',
-      ['AI', 'Automotive'],
-      'assets/images/ai-automotive.jpg',
-      'January 2021',
-      [
-        { authorName: 'John Doe', authorProfilePicture: 'assets/images/john-doe.jpg' },
-        { authorName: 'Jane Doe', authorProfilePicture: 'assets/images/jane-doe.jpg' }
-      ]
-    ),
-    new Publication(
-      'The impact of blockchain technology on the financial sector',
-      ['Blockchain', 'Finance'],
-      'assets/images/blockchain-finance.jpg',
-      'February 2021',
-      [
-        { authorName: 'John Doe', authorProfilePicture: 'assets/images/john-doe.jpg' },
-        { authorName: 'Jane Doe', authorProfilePicture: 'assets/images/jane-doe.jpg' }
-      ]
-    ),
-    new Publication(
-      'The role of IoT in the healthcare industry',
-      ['IoT', 'Healthcare'],
-      'assets/images/iot-healthcare.jpg',
-      'March 2021',
-      [
-        { authorName: 'John Doe', authorProfilePicture: 'assets/images/john-doe.jpg' },
-        { authorName: 'Jane Doe', authorProfilePicture: 'assets/images/jane-doe.jpg' }
-      ]
-    )
-  ];
+  publications: Publication[] = [];
+
+  constructor(private publicationsService: PublicationsService) { }
+
+  ngOnInit(): void {
+    this.publicationsService.getPublications().subscribe(
+      (data: Publication[]) => this.publications = data
+    );
+  }
 
 }
