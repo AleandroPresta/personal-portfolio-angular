@@ -1,5 +1,5 @@
 <div class="container d-flex gap-2 my-2">
-    <div class="card" style="width: 20rem;">
+    <div class="card custom-width">
         <img src={{projectImageUrl}} class="card-img-top" alt="Project image" width="300px" height="300px">
         <div class="m-2 d-flex flex-row flex-wrap gap-1">
             <app-custom-badge *ngFor="let tag of projectTags" [badgeText]="tag"></app-custom-badge>

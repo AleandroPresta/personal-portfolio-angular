@@ -28,3 +28,13 @@ img {
 .card:hover .card-text {
   color: #333; /* Darker text color */
 }
+
+.custom-width {
+  width: 20rem;
+}
+
+@media (max-width: 576px) {
+  .custom-width {
+    width: 100%; /* Change this to your desired width at the sm breakpoint */
+  }
+}
