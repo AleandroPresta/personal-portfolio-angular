@@ -23,7 +23,6 @@ export class PublicationsListComponent implements OnInit {
 
   ngOnInit(): void {
     this.publicationsService.getPublications().subscribe(data => {
-      console.log(JSON.stringify(data, null, 2));  // Log the data
       this.publications = data;
     });
   }
